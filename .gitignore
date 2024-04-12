@@ -69,5 +69,13 @@ poetry.lock
 
 # Miscellaneous files
 # Add any additional file patterns to ignore specific to your project down here
+#data/input
+#data/output
 
+# Ignore API keys and other secrets
+openai_api_key.json
 
+# Ignore common document files
+#*.pdf
+#*.docx
+#*.doc

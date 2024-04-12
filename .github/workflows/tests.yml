@@ -1,0 +1,44 @@
+name: Tests
+
+on:
+  workflow_dispatch: # Enable manual runs only
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Define the matrix of Python versions to test against
+    strategy:
+      matrix:
+        python-version: [ "3.9", "3.10", "3.11" ]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Set up Poetry for the Python version in the matrix
+      - name: Install Poetry
+        run: |
+          pip install poetry
+
+      # Install dependencies
+      - name: Install Dependencies
+        run: |
+          poetry install
+
+      # Run tests with pytest and generate JUnit XML reports for each Python version
+      - name: Run Tests
+        run: |
+          poetry run pytest tests/ --doctest-modules --junitxml=junit/test-results-${{ matrix.python-version }}.xml
+        continue-on-error: false
+
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: pytest-results-${{ matrix.python-version }}
+          path: junit/test-results-${{ matrix.python-version }}.xml
