@@ -51,9 +51,9 @@ The repository is structured as follows:
 
 # List of Notebooks
 
-| Notebook                                                                                   | Description                                                  |
-|--------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [embedding_and_indexing_documents](notebooks/basic/embedding_and_indexing_documents.ipynb) | This notebook demonstrates how to embed and index documents. |
+| Notebook                                                                                    | Description                                                  |
+|---------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| [embedding_and_indexing_documents](notebooks/basics/embedding_and_indexing_documents.ipynb) | This notebook demonstrates how to embed and index documents. |
 
 ## List of Important Papers
 
