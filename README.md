@@ -49,17 +49,17 @@ The repository is structured as follows:
 - `LICENSE`: The license file.
 - `README.md`: This file.
 
-# List of Notebooks
+## List of Notebooks
 
-| Notebook                                                                                    | Description                                                  |
-|---------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [embedding_and_indexing_documents](notebooks/basics/embedding_and_indexing_documents.ipynb) | This notebook demonstrates how to embed and index documents. |
+| Index | Notebook                                                                                   | Description                                                  |
+|-------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| 1     | [embedding_and_indexing_documents](notebooks/basics/embedding_and_indexing_documents.ipynb) | This notebook demonstrates how to embed and index documents. |
 
 ## List of Important Papers
 
-| Title                                                            | Authors      | Year | Link                                      |
-|------------------------------------------------------------------|--------------|------|-------------------------------------------|
-| Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks | Lewis et al. | 2020 | [arXiv](https://arxiv.org/abs/2005.11401) |
+| Index | Title                                                            | Authors      | Year | Link                                      |
+|-------|------------------------------------------------------------------|--------------|------|-------------------------------------------|
+| 1     | Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks | Lewis et al. | 2020 | [arXiv](https://arxiv.org/abs/2005.11401) |
 
 ## License
 
