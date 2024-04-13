@@ -32,6 +32,20 @@ poetry shell
 If everything went well, you should see the `(rag-playground)` prefix in your shell prompt indicating that you are in the
 Poetry environment. You can now run the scripts and notebooks in this repository.
 
+## Structure of the Repository
+
+The repository is structured as follows:
+
+- `bin`: Includes scripts that can be run from the command line; to download data, for example.
+- `data`: Includes data files.
+- `notebooks`: Includes Jupyter notebooks for experiments, sample applications, etc.
+- `secrets`: Includes secrets, such as API keys, that should not be shared publicly.
+- `src`: Includes reusable Python code that can be used in notebooks or other places.
+- `tests`: Includes tests for the scripts and notebooks.
+- `pyproject.toml`: The Poetry configuration file that includes the list of dependencies.
+- `LICENSE`: The license file.
+- `README.md`: This file.
+
 ## License
 
 Most files in this repository are licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
