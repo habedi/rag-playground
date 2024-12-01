@@ -13,13 +13,13 @@ Overview of a simple RAG pipeline:
 
 ## Poetry
 
-### Installation
+#### Installation
 
 ```
 pipx install poetry # or uv tool install poetry
 ```
 
-### Creating the Environment
+#### Creating the Environment
 
 ```bash
 poetry install
