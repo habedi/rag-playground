@@ -28,20 +28,22 @@ name=$2
 output_dir=$3
 
 # Create the output directory if it does not exist
-mkdir -p $output_dir
+mkdir -p "$output_dir"
 
 # Download the data
 if [ "$type" = "-d" ] || [ "$type" = "dataset" ]; then
-    kaggle datasets download $name -p $output_dir
+    kaggle datasets download "$name" -p "$output_dir"
 elif [ "$type" = "-c" ] || [ "$type" = "competition" ]; then
-    kaggle competitions download $name -p $output_dir
+    kaggle competitions download "$name" -p "$output_dir"
 else
     echo "Error: Invalid type. Please specify either 'd' or 'dataset' for dataset and 'c' or 'competition' for competition."
     exit 1
 fi
 
 # Unzip the data and remove the zip file
-unzip $output_dir/*.zip -d $output_dir && rm $output_dir/*.zip
+unzip "$output_dir"/*.zip -d "$output_dir" && rm "$output_dir"/*.zip
 
 # Print a success message
 echo "Successfully downloaded and unzipped the $type to $output_dir"
+
+exit 0
