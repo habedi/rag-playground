@@ -26,11 +26,12 @@ fi
 # Check if Pandoc is installed
 if ! command -v pandoc &> /dev/null; then
     echo "Pandoc could not be found"
-    echo "On Debian/Ubuntu: sudo apt install pandoc -y # to install Pandoc"
+    echo "On Debian-based OSes: sudo apt install pandoc -y # to install Pandoc"
     exit 1
 fi
 
 # Convert all x files to txt files in the given directory
+# shellcheck disable=SC2231
 for file in $1/*.$3; do
     filename=$(basename -- "$file")
     filename="${filename%.*}"

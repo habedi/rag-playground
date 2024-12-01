@@ -1,24 +1,24 @@
 [tool.poetry]
 name = "rag-playground"
 version = "0.1.0"
-description = "A repository for playing around with RAG and its applications"
+description = "A playground for RAG"
 authors = ["Hassan Abedi <hassan.abedi.t@gmail.com>"]
+maintainers = ["Hassan Abedi <<hassan.abedi.t@gmail.com>"]
 readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 pylint = "^3.0.3"
 pytest = "^8.0.1"
 jupyter = "^1.0.0"
-polars = "^0.20.17"
+polars = "^1.16.0"
 seaborn = "^0.13.2"
 pandas = "^2.2.1"
 openai = "^1.16.1"
 qdrant-client = "^1.8.2"
-pytest-cov = "^5.0.0"
+pytest-cov = "^6.0.0"
 fastparquet = "^2024.2.0"
-
-
 
 [build-system]
 requires = ["poetry-core"]
