@@ -4,12 +4,12 @@
 [![License](https://img.shields.io/github/license/habedi/rag-playground)](https://github.com/habedi/rag-playground/blob/main/LICENSE)
 [![Python version](https://img.shields.io/badge/python-3.10>=-blue)](https://www.python.org/)
 
-This is a playground repository for experimenting and learning about the
+This is a playground repository for experimenting and learning about the 
 [retrieval augmented generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) paradigm.
 
 Overview of a simple RAG pipeline:
 
-<img src="data/static/RAG.svg" alt="Overview" width="100%"/ align="center">
+<img src="data/static/RAG.svg" alt="Overview" width="70%" align="center"/>
 
 ## Poetry
 
@@ -31,7 +31,7 @@ poetry install
 |-------|---------------------------------------------------------------------------------------------|--------------------------------------------------------------|
 | 1     | [embedding_and_indexing_documents](notebooks/basics/embedding_and_indexing_documents.ipynb) | This notebook demonstrates how to embed and index documents. |
 
-## List of Important Papers
+## Papers
 
 | Index | Title                                                                           | Authors      | Year | Link                                      |
 |-------|---------------------------------------------------------------------------------|--------------|------|-------------------------------------------|
