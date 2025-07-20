@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/habedi/rag-playground)](https://github.com/habedi/rag-playground/blob/main/LICENSE)
 [![Python version](https://img.shields.io/badge/python-3.10>=-blue)](https://www.python.org/)
 
-This is a playground repository for experimenting and learning about the 
+This is a playground repository for experimenting and learning about the
 [retrieval augmented generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) paradigm.
 
 Overview of a simple RAG pipeline:

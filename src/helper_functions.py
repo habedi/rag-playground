@@ -3,7 +3,7 @@ import json
 import pandas as pd
 
 
-def load_data(data_dir, ext='txt'):
+def load_data(data_dir, ext="txt"):
     """
     Load data from a directory and return a pandas DataFrame.
 
@@ -16,14 +16,16 @@ def load_data(data_dir, ext='txt'):
     """
     documents = []
     documents_ids = []
-    for file_path in data_dir.glob(f'*.{ext}'):
-        with open(file_path, 'r') as file:
+    for file_path in data_dir.glob(f"*.{ext}"):
+        with open(file_path, "r") as file:
             documents.append(file.read())
             documents_ids.append(file_path.stem)
-    return pd.DataFrame({
-        'id': documents_ids,
-        'text': documents,
-    })
+    return pd.DataFrame(
+        {
+            "id": documents_ids,
+            "text": documents,
+        }
+    )
 
 
 def get_openai_api_key(file_path):
@@ -36,8 +38,8 @@ def get_openai_api_key(file_path):
     Returns:
     str: The OpenAI API key.
     """
-    with open(file_path, 'r') as file:
-        return json.load(file)['secret_key']
+    with open(file_path, "r") as file:
+        return json.load(file)["secret_key"]
 
 
 def embed_documents(documents, openai_client, embedding_model):
